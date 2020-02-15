@@ -1,0 +1,27 @@
+nav {
+  width: 100vw;
+  font-size: 1.4rem;
+  background-color: beige;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.list-item {
+  margin: 0 15px;
+}
+
+.list-item a {
+  color: coral;
+  text-decoration: none;
+}
+
+.list-item a:hover {
+  color: rgb(110, 91, 48);
+}

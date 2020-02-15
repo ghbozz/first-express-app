@@ -1,0 +1,12 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container {
+  padding: 20px 3rem;
+}
