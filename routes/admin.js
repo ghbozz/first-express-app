@@ -2,6 +2,8 @@ const path = require('path');
 const express = require('express');
 const router = express.Router();
 
+const products = [];
+
 // NEW PRODUCT FORM
 router.get('/products/new', (req, res, next) => {
   res.sendFile(
@@ -11,7 +13,9 @@ router.get('/products/new', (req, res, next) => {
 
 // CREATE PRODUCT
 router.post('/products', (req, res, next) => {
+  products.push(req.body);
   res.redirect('/');
 });
 
-module.exports = router;
+exports.routes = router;
+exports.products = products;
