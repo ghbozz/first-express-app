@@ -11,7 +11,9 @@
     <%- include('../includes/nav.ejs') %>
 
     <main class="container">
-      <%- include('../includes/products_list', { products: products }) %>
+      <% if (products.length === 0) { %>
+      <h1>There is no products</h1>
+      <% } else { %> <%- include('../includes/products_list', { products: products }) %> <% } %>
     </main>
   </body>
 </html>

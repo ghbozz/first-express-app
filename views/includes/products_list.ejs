@@ -2,7 +2,10 @@
   <h1>All The Products</h1>
   <ul>
     <% products.forEach(product => { %>
-    <li><%= product.name %> / <%= product.createdAt %></li>
+    <li>
+      <%= product.name %> - <%= product.createdAt.toLocaleDateString('eng', { weekday: 'long', year: 'numeric', month:
+      'long', day: 'numeric' }) %>
+    </li>
     <% }) %>
   </ul>
 </div>
