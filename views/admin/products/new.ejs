@@ -9,16 +9,7 @@
     <link rel="stylesheet" href="../../css/form.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul class="nav-items">
-          <li class="list-item"><a href="/">Shop</a></li>
-          <li class="list-item">
-            <a href="/admin/products/new">New Product</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <%- include('../../includes/nav.ejs') %>
 
     <main class="container">
       <form action="/admin/products" method="POST">

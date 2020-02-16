@@ -3,9 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 router.use('/', (req, res, next) => {
-  res
-    .status(404)
-    .sendFile(path.join(__dirname, '..', 'views', 'errors', '404.html'));
+  res.status(404).render('errors/404', { pageTitle: ':(' });
 });
 
 module.exports = router;

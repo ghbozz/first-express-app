@@ -1,0 +1,8 @@
+<div class="products_list">
+  <h1>All The Products</h1>
+  <ul>
+    <% products.forEach(product => { %>
+    <li><%= product.name %> / <%= product.createdAt %></li>
+    <% }) %>
+  </ul>
+</div>

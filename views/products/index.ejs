@@ -8,17 +8,10 @@
     <link rel="stylesheet" href="css/utilities.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul class="nav-items">
-          <li class="list-item"><a href="/">Shop</a></li>
-          <li class="list-item"><a href="/admin/products/new">New Product</a></li>
-        </ul>
-      </nav>
-    </header>
+    <%- include('../includes/nav.ejs') %>
 
     <main class="container">
-      <h1>All The Products</h1>
+      <%- include('../includes/products_list', { products: products }) %>
     </main>
   </body>
 </html>

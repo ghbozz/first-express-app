@@ -6,14 +6,12 @@ const products = [];
 
 // NEW PRODUCT FORM
 router.get('/products/new', (req, res, next) => {
-  res.sendFile(
-    path.join(__dirname, '..', 'views', 'admin', 'products', 'new.html')
-  );
+  res.render('admin/products/new');
 });
 
 // CREATE PRODUCT
 router.post('/products', (req, res, next) => {
-  products.push(req.body);
+  products.push({ name: req.body.name, createdAt: new Date() });
   res.redirect('/');
 });
 
